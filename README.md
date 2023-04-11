@@ -23,6 +23,7 @@ Of course as a guest you can't add or delete the list of projects that I have.
 ## Profile Setup
 
 Just change the **index.html** files according to your needs.
+
 **note: Make sure you change it, you don't want your profile turn into a Shrek profile right?"**
 
 ## Firebase Setup
