@@ -10,8 +10,9 @@ This is a simple portfolio page built using only html css and vanilla javascript
 
 ## Demo
 
--Go to [my portfolio](http://arisada.is-great.net/login.html) login pages.
--You can login using the email and password below.
+- Go to [my portfolio](http://arisada.is-great.net/login.html) login pages.
+- You can login using the email and password below.
+
 ```sh
 Email: guest@guest.com
 Pass: guest1234
@@ -22,7 +23,6 @@ Of course as a guest you can't add or delete the list of projects that I have.
 ## Profile Setup
 
 Just change the **index.html** files according to your needs.
-
 **note: Make sure you change it, you don't want your profile turn into a Shrek profile right?"**
 
 ## Firebase Setup
