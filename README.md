@@ -15,7 +15,7 @@ This is a simple portfolio page built using only html css and vanilla javascript
 ```sh
 Email: guest@guest.com
 Pass: guest1234
-``
+```
 
 Of course as a guest you can't add or delete the list of projects that I have.
 
@@ -46,7 +46,7 @@ service cloud.firestore {
     }
   }
 }
-``
+```
 
 ##Email
 
