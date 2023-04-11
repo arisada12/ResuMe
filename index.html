@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arisadada Akhsani Taqwim</title>
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="style/animate.css"/>
+
+</head>
+<body>
+    <nav id="nav-container">
+        <h1 class="my-logo"><a href="#">ResuME</a></h1>
+        <ul class="nav-bar" >
+            <li class="nav-list"><a href="#me-card">Me</a></li>
+            <li class="nav-list"><a href="#proyek">Project</a></li>
+            <li class="nav-list"><button><a href="#kontak">Contact</a></button></li>
+        </ul>
+    </nav>
+
+    <section id="me-card">
+        <button class="headBtn"><h2>Welcome to My Portfolio</h2></button>
+        <img src="img/shrek.png" alt="Shrk" class="img-thumbnail-rounded"/>
+        <h1>Hi! I am Shrek, Web Developer</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro esse enim, ipsam hic nesciunt eaque!</p>
+    </section>
+
+    <section id="proyek" class="container">
+        <button class="headBtn"><h2>Project</h2></button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nesciunt officia libero architecto fugit ab quam ipsum?</p>
+        <div class="cards">
+        </div>
+        <div class="loadingProject">Loading project...</div>
+    </section>
+
+    <section id="tambahProyek"></section>
+
+    <section id ="kontak" class="container bgAccent">
+        <button class="headBtn"><h2>Contact  Me</h2></button>
+        <form id ="contactMe" class="containerWrapper">
+            <p align="center">(*) required!</p>
+            <div id ="contactWrapper">
+                <input type='text' name="firstName" class="infoForm" placeholder="First Name(*)" required/>
+                <input type='text' name="lastName" class="infoForm" placeholder="Last Name"/>
+            </div>
+            <div id ="contactWrapper">
+                <input type="tel" name="telepon" class="infoForm" placeholder="Phone Numb." pattern="^[0-9]{1,}$"/>
+                <input type="email" name="eMail" class="infoForm" placeholder="Email(*)" required/>
+            </div>
+            <div id ="contactWrapper">
+                <input type='text' name="message" class="messageForm" placeholder="Message(*)" required/>
+            </div>
+            <button type="submit" class="genBtn">Send</button>
+            <p align="center">Or just simply text me at shrek@mail.com</p>
+        </form>
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/pageHandling.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
