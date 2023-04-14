@@ -38,7 +38,7 @@ class EmailProperties{
 class ProjectProperties extends EmailProperties{
     constructor(projTitle, projDesc, projUrl, projDate, projID){
         super()
-        this.projec ={
+        this.projec = {
             id: projID,
             title: projTitle,
             desc: projDesc,
