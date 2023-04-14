@@ -58,7 +58,7 @@ In the future I might add read and delete mails to to c-panel or dashboard page 
 
 ## To do list:
 
-~~- Add edit Feature~~
-- Create a dashboard or c-panel page to costumize user profile without edit in index.html manually.
--  Translate portfolio.
--   Read and delete mail.
+~~Add eddit feature.~~
+Create a dashboard or c-panel page to costumize user profile without edit in index.html manually.
+Translate portfolio.
+Read and delete mail.
