@@ -21,7 +21,7 @@ class EmailProperties{
             alert(error)
         })
     }
-    genId(srcTit){
+    static genId(srcTit){
         //generating id so you can use same name for document
         let srcTitle = srcTit
         let letters = "abcdefghijklmnopqrstuvwxyz"
@@ -58,7 +58,7 @@ getForm.addEventListener("submit", (e)=>{
     
     //I am just too lazzy to create new var
     const forMail = new EmailProperties(getForm.firstName.value, getForm.lastName.value, getForm.telepon.value, getForm.eMail.value, getForm.message.value)
-    const docMail = forMail.genId(getForm.firstName.value.split(" ").join("-"))
+    const docMail = EmailProperties.genId(getForm.firstName.value.split(" ").join("-"))
     forMail.sendInfo(forMail.data, "mails", docMail)
 })
 
@@ -95,24 +95,14 @@ const formProject = () => {
     const descrt = document.getElementById("desc")
     const webUrl= document.getElementById("webLink")
     const addBtn = document.querySelector("[data-button='addBtn']")
-    const tanggal = new Date().getTime()
+    const tanggal = new Date()
     
     
     addBtn.addEventListener("click", (e)=>{
         e.preventDefault()
-		
-		//Even i added this in class method, still i confuse how to call this before add new intance object
-        let docTitle = judul.value
-        let letters = "abcdefghijklmnopqrstuvwxyz"
-        let id = ""
-        for(let i = 0; i < 4; i++){
-            id += letters[Math.floor(Math.random()*letters.length)]
-        }
-        //combine id with your title
-        let docName = `${docTitle}-${id}`
-
-        const forProject = new ProjectProperties(judul.value, descrt.value, webUrl.value,tanggal,docName)
-        forProject.sendInfo(forProject.projec, "projects", docName)
+        const docTitle = EmailProperties.genId(judul.value.split(" ").join("-"))
+        const forProject = new ProjectProperties(judul.value, descrt.value, webUrl.value,tanggal,docTitle)
+        forProject.sendInfo(forProject.projec, "projects", docTitle)
     })
 
 }
