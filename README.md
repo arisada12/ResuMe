@@ -7,10 +7,11 @@ This is a simple portfolio page built using only html css and vanilla javascript
 - Login Pages
 - Add Project
 - Del Project
+- Edit Project
 
 ## Demo
 
-- Go to [my portfolio](https://www.arisada.is-great.net/login.html) login page.
+- Go to [my portfolio](http://www.arisada.is-great.net/login.html) login page.
 - You can login using the email and password below.
 
 ```sh
@@ -58,5 +59,5 @@ In the future I might add read and delete mails to to c-panel or dashboard page 
 ## To do list:
 
 - Create a dashboard or c-panel page to costumize user profile without edit in index.html manually.
--  Translate portfolio.
--   Read and delete mail.
+- Translate portfolio.
+- Read and delete mail.
